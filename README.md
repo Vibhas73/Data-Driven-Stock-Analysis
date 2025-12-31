@@ -63,12 +63,13 @@ Granular Analysis: Filter performance by specific months (e.g., Oct 2023) to see
    
 2. **Run the Project with following commands:**
     ```bash
-    pip install -r requirement.txt
     python -m venv env
     cd env/Scripts
     .\Activate.ps1
     cd ..
-    cd .. 
+    cd ..
+    pip install -r requirement.txt
+    cd src
     python data_processor.py
     python dbSetup.py
     streamlit run streamlit_app.py
